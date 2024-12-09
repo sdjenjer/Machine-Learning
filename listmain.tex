@@ -1,0 +1,37 @@
+\newcommand{\setenumi}{
+    \topsep=0mm
+    \partopsep=0mm
+    \parsep=0mm
+    \itemsep=0mm
+    \leftmargin=0pt
+    \listparindent=7mm
+    \itemindent=3mm
+    \labelsep=2mm
+    \labelwidth=-5mm
+    \usecounter{enumi}
+    }
+
+
+
+% \newcommand{\setitemi}{
+%     \topsep=0mm
+%     \partopsep=0mm
+%     \parsep=0mm
+%     \itemsep=0mm
+%     \leftmargin=\leftmargini
+%     \listparindent=0mm
+%     \itemindent=0mm
+%     \labelsep=2mm
+%     \labelwidth=3mm
+%     }    
+
+\newenvironment{remarkenumi}
+    {\begin{list}{\labelenumi}{\setenumi}}
+    {\end{list}}
+
+% \renewenvironment{itemize}
+%     {\begin{list}{$\bullet$}{\setitemi}}
+%     {\end{list}}
+
+\renewcommand{\theenumi}{\alph{enumi}}
+\renewcommand{\labelenumi}{(\alph{enumi})}

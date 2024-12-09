@@ -1,0 +1,102 @@
+% \newcommand{\remarkablelist}{
+% \renewcommand{\theenumi}{(\alph{enumi})}
+% \renewcommand{\labelenumi}{(\alph{enumi})}
+% \makeatletter
+% \renewcommand{\@listi}{\leftmargin=0mm \listparindent=5mm \labelsep=2mm \itemindent=5mm \labelwidth=-7mm \itemsep=1mm}
+% \makeatother
+% }
+
+
+% \long\def\comment#1\endcomment{}
+
+\newcommand\norm[1]{\ensuremath{\left\lVert#1\right\rVert}}
+\newcommand\abs[1]{\ensuremath{\left\lvert#1\right\rvert}}
+\newcommand\babs[1]{\ensuremath{\bigl\lvert#1\bigr\rvert}}
+
+\newcommand{\divby}{\;\raisebox{-0.4ex}{\vdots}\;}
+
+\newcommand\tomeasure[1]{\ensuremath{\mathrel{\stackrel{#1}{\longrightarrow}}}}
+\newcommand\tow{\ensuremath{\mathrel{\stackrel{\textit{w}}{\longrightarrow}}}}
+\newcommand\tod{\ensuremath{\mathrel{\stackrel{\textit{d}}{\longrightarrow}}}}
+\newcommand\topr{\ensuremath{\mathrel{\stackrel{\mathrm{P}}{\longrightarrow}}}}
+
+\newcommand{\Normald}{\mathcal{N}}
+\newcommand{\Bern}{\mathrm{Bern}}
+\newcommand{\Bin}{\mathrm{Bin}}
+\newcommand{\Exp}{\mathrm{Exp}}
+\newcommand{\Pois}{\mathrm{Pois}}
+\newcommand{\Cauchy}{\mathrm{Cauchy}}
+\newcommand{\Pareto}{\mathrm{Pareto}}
+\newcommand{\Beta}{\mathrm{Beta}}
+\newcommand{\Geom}{\mathrm{Geom}}
+\newcommand{\Uniform}{\mathrm{U}}
+\newcommand{\Laplace}{\mathrm{Laplace}}
+
+\newcommand{\Borel}{\mathcal{B}}
+
+\renewcommand{\Pr}{\mathrm{P}}
+
+\DeclareMathOperator{\Expect}{\mathbb{E}}
+\DeclareMathOperator{\Dvar}{\mathbb{D}}
+\DeclareMathOperator{\cov}{cov}
+\DeclareMathOperator{\var}{var}
+
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\Image}{Im}
+\DeclareMathOperator{\Img}{Im}
+\DeclareMathOperator{\dom}{dom}
+\DeclareMathOperator{\cod}{cod}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\ob}{ob}
+
+\DeclareMathOperator{\Con}{Con}
+
+\DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\tr}{tr}
+
+\DeclareMathOperator{\conv}{conv}
+\DeclareMathOperator{\vspan}{span}
+
+\DeclareMathOperator{\maj}{maj}
+\DeclareMathOperator{\poly}{poly}
+
+\DeclareMathOperator{\diag}{diag}
+
+
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+\newcommand{\Z}{\ensuremath{\mathbb{Z}}}
+\newcommand{\Cx}{\ensuremath{\mathbb{C}}}
+\newcommand{\Q}{\ensuremath{\mathbb{Q}}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+
+% \newcommand{\tset}[1]{\ensuremath{\{#1\}}}
+% \newcommand{\dset}[1]{\ensuremath{\bigl\{#1\bigr\}}}
+\newcommand{\bin}{\ensuremath{\{0,1\}}}
+\newcommand{\cut}[1]{\ensuremath{\left[\,#1\,\right]}}
+\newcommand{\dbraket}[1]{\ensuremath{\bigl\langle#1\bigr\rangle}}
+\newcommand{\bbraket}[1]{\ensuremath{\left\langle#1\right\rangle}}
+
+\newcommand{\round}[1]{\ensuremath{\left[#1\right]}}
+
+\renewcommand{\ge}{\geqslant}
+\renewcommand{\geq}{\geqslant}
+\renewcommand{\le}{\leqslant}
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\emptyset}{\varnothing}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{mcnt}
+\renewcommand{\themcnt}{(\alph{mcnt})}
+\newcommand{\cnt}{\addtocounter{mcnt}{1}\themcnt\ \nopagebreak}
+\newcommand{\juststep}{\addtocounter{mcnt}{1}\themcnt}
+\newcommand{\stabilizemcnt}{\renewcommand{\themcnt}{(\alph{mcnt})}}
+
+\newcounter{wordcnt}
+\newcommand\createLabelWord[1]{\refstepcounter{wordcnt}#1}
+\newcounter{savecnt}
+
+\newcounter{fc}
